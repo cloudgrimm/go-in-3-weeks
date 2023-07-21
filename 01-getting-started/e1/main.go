@@ -1,19 +1,19 @@
 package main
 
 import (
-	"fmt"
+	"fmt" //standard go library
 
 	"github.com/jboursiquot/go-proverbs"
 )
 
-const location = "Remote"
+const location = "Remote" //type of constant is inferred and should not be necessarily be explicit
 
-var name string
+var name string //global variable which has only been declared
 
 func main() {
-	name = "Johnny"
-	from := `Haiti`
-	var n int = 2
+	name = "Wilbrod" //variable has been assigned
+	from := `Zimbabwe` //declaration and assignment done at the same time
+	var n int = 2 
 
 	var proverb = "Undefined"
 	if p, err := proverbs.Nth(4); err == nil {
